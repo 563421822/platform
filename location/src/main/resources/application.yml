@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:mysql://wangyl97.mysql.rds.aliyuncs.com/db_location?useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&useSSL=false
+    username: wangyl
+    password: a1B2c3D4
+  elasticsearch:
+    rest:
+      uris: http://150.158.185.208:9200
+  rabbitmq:
+    host: 150.158.185.208
+    username: guest
+    password: guest
+  application:
+    name: LOCATION
+  servlet:
+    multipart:
+      max-file-size: 10MB
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8080/eureka
+  instance:
+    prefer-ip-address: true
+server:
+  port: 97
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 30000
+        readTimeout: 30000

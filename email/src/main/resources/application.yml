@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  mail:
+    host: smtp.189.cn
+    username: 07965296196@189.cn
+    password: 563421822
+    port: 465
+    protocol: smtps
+  rabbitmq:
+    host: 150.158.185.208
+    username: guest
+    password: guest
+logging:
+  level:
+    org.springframework: debug
